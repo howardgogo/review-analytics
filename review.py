@@ -1,4 +1,4 @@
-data= []
+data = []
 count = 0
 with open('reviews.txt', 'r')as f:
 	for line in f:
@@ -14,5 +14,12 @@ for d in data:
 
 print('留言平均長度為', sum_len / len(data))
 
+new = []
+for d in data:
+	if len(d) < 100:
+		new.append(d)
+
+print('字數小於100的留言共有', len(new), '筆')
+print(new[3])
 
 
