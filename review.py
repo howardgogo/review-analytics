@@ -22,4 +22,10 @@ for d in data:
 print('字數小於100的留言共有', len(new), '筆')
 print(new[3])
 
-
+good = []
+for d in data:
+	if 'good' in d:
+		good.append(d)
+print('留言裡面有good的留言有', len(good), '筆')
+print(good[0])
+#len清單中元素數量
